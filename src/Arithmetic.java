@@ -1,26 +1,32 @@
 import java.util.Scanner;
-public class Arithmetic {
 
-	
-
-	   
-	    public static void main(String args[]) {
-	       Scanner entry = new Scanner(System.in);
+public class Arithmetic{
+    public static void main(String args[]) {
+	       Scanner in = new Scanner(System.in);
 	       float number1, number2, addition, substraction, multiplication, division, remainder;
 	       String name = "";
+	       /*float number2;
+	       float addition; 
+	       float substraction;
+	       float multiplication;
+	       float division;
+	       float remainder; // remainder = modulo
+	       String name = "";*/
 	       
 	       System.out.print("**************************************");
 	       System.out.print("*Welcome to Mathematics Olympics Game*");
 	       System.out.print("**************************************");
 	       System.out.println("");
 	       System.out.println("");
+	       
 	      
 	       System.out.print("I would like to know your fullname: ");
-	       name = entry.nextLine();
+	       name = in.nextLine();
 	       System.out.println("");
 	       System.out.println("");
 	       
-	       System.out.println(name.charAt(0));
+	       
+	       System.out.println(name.charAt(5));
 	       System.out.println(name.trim());
 	       //System.out.println(name.indexOf());
 	       System.out.println(name.length());
@@ -29,19 +35,21 @@ public class Arithmetic {
 	       System.out.println("");
 	       System.out.println("");
 	       
-	       System.out.print("Apologize for writing many times your name i just wanted to play lol!!");
-	       name = entry.nextLine();
+	       
+	       System.out.print("Apologize for writing many times your name I just wanted to play lol!!");
+	       name = in.nextLine();
+	       System.out.println("");
 	       System.out.println("");
 	       
-	       //System.out.println("");
+	        
 	       System.out.println("Let's Start " + name);
 	       System.out.println("");
 	       System.out.println("");
 	       
 	       
 	       System.out.print("Could you type 2 numbers: ");
-	       number1 = entry.nextFloat();
-	       number2 = entry.nextFloat();
+	       number1 = in.nextFloat();
+	       number2 = in.nextFloat();
 	       
 	       
 	       addition = number1+number2;
